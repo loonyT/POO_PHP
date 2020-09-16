@@ -11,6 +11,10 @@ $Category = Model::load("category");
 if(!empty($_POST)){
     $Category->save($_POST); /*like that youre saving all posted categories*/
     $Category->save($_POST); /*like that youre saving all posted categories*/
+    //im getting back the id : 
+    $_GET[id]$Category->id=2;
+   
+    
 }
 
 ?>
@@ -42,6 +46,8 @@ if(!empty($_POST)){
       <input type="hidden" name="id" value="<?php echo $Category->id; ?>"/>
       <input type="text" name="name" value="<?php echo $Category->name;?>"/>
        <input type="text" name="position" value="<?php echo $Category->position;?>"/>
+      <input type="submit" value="envoyer"/>
+      
       
               
         </form>
